@@ -13,7 +13,8 @@
     },
     "autoload": {
         "psr-0": {
-            "Kamaro\\Cart": "src/"
+            "Kamaro": "src/"
+          
         }
     },
     "minimum-stability": "stable"

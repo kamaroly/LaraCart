@@ -19,17 +19,14 @@ class CartServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app['LaraCart'] = $this->app->share(function($app)
-                              {
-                                return new LaraCart;
-                              });
+		$this->app->bind('cart','Kamaro\Cart\Cart');
 	}
 
 	public function boot(){
 
 		$this->package('Kamaro/Cart');
 
-		AliasLoader::getInstance()->alias('LaraCart','Kamaro\Cart\LaraCart');
+		AliasLoader::getInstance()->alias('Cart','Kamaro\Cart\Cart');
 	}
 
 	/**
@@ -39,7 +36,7 @@ class CartServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array('LaraCart');
+		return array('cart');
 	}
 
 }

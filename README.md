@@ -16,5 +16,8 @@ Laravel Cart package coded based on the Codeigniter Cart library
  * - Cart seIdentity : Cart Identifier in case we want to use different Cart Identity in the same Session
  * - Cart getIdentity : the cart identifier.
 
+Installation
+============
+
 Note : this package is still under development it hasn't reached it's stable version
 ====
