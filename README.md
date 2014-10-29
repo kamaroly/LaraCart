@@ -114,6 +114,64 @@ $data = array(
 
 To display the cart you will create a view file with code similar to the one shown below.
 
+```html
+
+{{ Form::open(array('url' => 'ath/to/route/to/update')) }}
+
+<table cellpadding="6" cellspacing="1" style="width:100%" border="0">
+
+<tr>
+  <th>QTY</th>
+  <th>Item Description</th>
+  <th style="text-align:right">Item Price</th>
+  <th style="text-align:right">Sub-Total</th>
+</tr>
+
+<?php $i = 1; ?>
+
+@foreach ($this->cart->contents() as $items):
+
+	 {{Form::text($i.'[rowid]', $items['rowid'])}}
+
+	<tr>
+	  <td>
+	  	{{Form::text(array('name' => $i.'[qty]', 'value' => $items['qty'], 'maxlength' => '3', 'size' => '5'))}}</td>
+	  <td>
+		{{$items['name']}}
+
+			@if (cart::has_options($items['rowid']) == TRUE):
+
+				<p>
+					@foreach (cart::product_options($items['rowid']) as $option_name => $option_value):
+
+						<strong>{{$option_name}}:</strong> {{$option_value}} <br />
+
+					@endforeach; ?>
+				</p>
+
+			@endif;
+
+	  </td>
+	  <td style="text-align:right">{{cart::format_number($items['price']);}}</td>
+	  <td style="text-align:right">{{cart::format_number($items['subtotal']);}}</td>
+	</tr>
+
+<?php $i++; ?>
+
+@endforeach;
+
+<tr>
+  <td colspan="2"> </td>
+  <td class="right"><strong>Total</strong></td>
+  <td class="right">{{cart::format_number(cart::total())}}</td>
+</tr>
+
+</table>
+
+<p>{{Form::submit('Update your cart')}}</p>
+{{ Form::close() }}
+
+```
 
 
 ## Updating The Cart
