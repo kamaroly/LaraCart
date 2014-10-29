@@ -175,7 +175,7 @@ Please examine the construction of the "view cart" page above for more informati
 
 ```php  
 cart::insert(); //Permits you to add items to the shopping cart, as outlined above.
-
+```
 
 ```php  
 cart::update(); //Permits you to update items in the shopping cart, as outlined above.
