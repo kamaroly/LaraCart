@@ -18,6 +18,7 @@ Laravel Cart package coded based on the Codeigniter Cart library
 
 Installation
 ============
+Documentation coming soon...
 
 Note : this package is still under development it hasn't reached it's stable version
 ====

@@ -1,30 +1,25 @@
 <?php namespace Kamaro\Cart;
 
-use Illuminate\Support\Facades\Session;
-use Illuminate\Support\Facades\Log;
 /**
- * KPos
- *
- * An open source source Point of Sale build in Laravel for 5.4 or newer
- *
- * NOTICE OF LICENSE
- *
- * Licensed under MIT
- *
- * This class was originally written by the team EllisLab Dev Team, then as I needed same 
- * class to use in laravel , I decided to modify this class and make it compatible with Laravel.
- *
- * I am also planning to add more features to this class such as
- * - Taxes 
- * - Coupons,
- * - Remove multiple items 
- * - Check if Item exists
- * - Cart SubTotal
- * - Cart Quantity : total number of items that are in the cart
- * - Cart seIdentity : Cart Identifier in case we want to use different Cart Identity in the same Session
- * - Cart getIdentity : the cart identifier.
- *
- *
+* Name:  Cart
+*
+* Author: EllisLab Dev Team
+*      
+* An open source source Point of Sale build in Laravel for 5.4 or newer
+*
+* NOTICE OF LICENSE
+*
+* Licensed under MIT
+*
+* This class was originally written by the team EllisLab Dev Team, then as I needed same 
+* class to use in laravel , I decided to modify this class and make it compatible with Laravel.
+* Added Awesomeness & Laravel Compatibilites: Kamaro Lambert
+*
+* Location: https://github.com/kamaroly/LaraCart/
+*
+* Shopping Cart Class
+* Requirements: PHP5.4 or above
+*
  * @package		Kamaro Point of Sale
  * @author		EllisLab Dev Team Transformed  by Kamaro Lambert to adopt it in Laravel
  * @copyright	Copyright (c) 2014 Kamaro Lambert. (http://kamaroly.com/)
@@ -34,14 +29,9 @@ use Illuminate\Support\Facades\Log;
  * @filesource
  */
 
-/**
- * Shopping Cart Class
- *
- * @package		Kamaro Point of Sale
- * @subpackage	Libraries
- * @category	Shopping Cart
- * @author		EllisLab Dev Team changed by Kamaro Lambert
- */
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Log;
+
 class Cart {
 
 	/**
