@@ -1,6 +1,7 @@
 {
     "name": "kamaro/cart",
-    "description": "",
+    "description": "From CodeIgniter to Laravel , The Cart composer package permits items to be added to a session that stays active while a user is browsing your site. These items can be retrieved and displayed in a standard 'shopping cart' format, allowing the user to update the quantity or remove items from the cart.
+  Please note that the Cart composer package ONLY provides the core "cart" functionality. It does not provide shipping, credit card authorization, or other processing components.",
     "authors": [
         {
             "name": "Kamaro Lambert",

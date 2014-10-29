@@ -2,6 +2,8 @@ LaraCart
 ========
 
 Laravel Cart package coded based on the Codeigniter Cart library
+From CodeIgniter to Laravel , The Cart composer package permits items to be added to a session that stays active while a user is browsing your site. These items can be retrieved and displayed in a standard 'shopping cart' format, allowing the user to update the quantity or remove items from the cart.
+  Please note that the Cart composer package ONLY provides the core "cart" functionality. It does not provide shipping, credit card authorization, or other processing components.
 
  * The used class was originally written by the team EllisLab Dev Team, then as I needed same 
  * class to use in laravel , I decided to modify this class and make it composer package for Laravel.
