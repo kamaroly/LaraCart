@@ -280,6 +280,3 @@ cart::destroy();//Permits you to destroy the cart. This method will likely be ca
 
 ```
 
-
-Note : this package is still under development it hasn't reached it's stable version
-====
