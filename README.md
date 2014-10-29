@@ -113,7 +113,7 @@ $data = array(
 ## Displaying the Cart
 
 To display the cart you will create a view file with code similar to the one shown below.
-
+``Note: If the quantity is set to zero, the item will be removed from the cart.``
 ```html
 
 {{ Form::open(array('url' => 'ath/to/route/to/update')) }}
