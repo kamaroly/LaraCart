@@ -113,8 +113,9 @@ $data = array(
 ## Displaying the Cart
 
 To display the cart you will create a view file with code similar to the one shown below.
-``Note: If the quantity is set to zero, the item will be removed from the cart.``
-```html
+``Please note that this example uses the form helper.``
+
+```php
 
 {{ Form::open(array('url' => 'ath/to/route/to/update')) }}
 
@@ -179,7 +180,7 @@ To display the cart you will create a view file with code similar to the one sho
 To update the information in your cart, you must pass an array containing the Row ID and quantity to the   
 cart::update() method:
 
-#### Note: If the quantity is set to zero, the item will be removed from the cart.
+`Note: If the quantity is set to zero, the item will be removed from the cart.`
 
 ```php
 $data = array(
