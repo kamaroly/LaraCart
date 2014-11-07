@@ -1,6 +1,7 @@
 {
     "name": "kamaro/cart",
     "description": "Cart package from CodeIgniter added Awesomeness by Kamaro Lambert",
+    "license": "MIT",
     "authors": [
         {
             "name": "Kamaro Lambert",
